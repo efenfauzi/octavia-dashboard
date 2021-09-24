@@ -911,7 +911,8 @@
       var params = {params: {}};
       return apiService.get('/api/lbaas/availabilityzones/', params)
         .error(function () {
-          toastService.add('error', gettext('Unable to retrieve availability zones.'));
+          //toastService.add('error', gettext('Unable to retrieve availability zones.'));
+          console.log("Unable to retrieve availability zones.");
         });
     }
 
